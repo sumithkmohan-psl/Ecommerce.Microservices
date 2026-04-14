@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/UserService/">
+    <Project Path="src/Services/UserService/UserService.API/UserService.API.csproj" />
+    <Project Path="src/Services/UserService/UserService.Application/UserService.Application/UserService.Application.csproj" />
+    <Project Path="src/Services/UserService/UserService.Domain/UserService.Domain/UserService.Domain.csproj" />
+    <Project Path="src/Services/UserService/UserService.Infrastructure/UserService.Infrastructure/UserService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/UserService.Tests/UserService.Tests.csproj" Id="c7324f1f-8895-4dab-9c08-c3256c96c934" />
+  </Folder>
+</Solution>
