@@ -42,7 +42,7 @@ namespace UserService.API.Controllers
 
             var token = _tokenService.GetToken(user.UserId, user.Role);
 
-            return Ok( new { Token = token });
+            return Ok( new {  Token = token });
         }
 
         // GET api/<UserController>/5
