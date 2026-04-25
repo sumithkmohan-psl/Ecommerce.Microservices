@@ -16,6 +16,18 @@ namespace UserService.Infrastructure.Data.Configurations
             builder.Property(u => u.FirstName).IsRequired().HasMaxLength(50);
             builder.Property(u => u.LastName).IsRequired().HasMaxLength(50);
             builder.Property(u => u.Password).IsRequired().HasMaxLength(100);
+
+            builder.HasData(
+                new User
+                {
+                    UserId = 1,
+                    Email = "sumith.k.mohan@gmail.com",
+                    FirstName = "Sumith",
+                    LastName = "K Mohan",
+                    Password = "123",
+                    RoleId=1
+                }
+            );
         }
     }
 }
