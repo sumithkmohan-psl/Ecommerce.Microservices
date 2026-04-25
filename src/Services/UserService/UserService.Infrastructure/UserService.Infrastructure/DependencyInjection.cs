@@ -16,7 +16,7 @@ namespace UserService.Infrastructure
         {
             // Register DbContext
             services.AddDbContext<UserDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
             // Register repositories
             services.AddScoped<IUserRepository, UserRepository>();
             // Register other infrastructure services if needed

@@ -16,6 +16,14 @@ namespace UserService.Infrastructure.Data.Configurations
             builder.HasKey(r => r.Id);
             builder.Property(r => r.Name).IsRequired().HasMaxLength(50).IsUnicode(false);
             builder.HasMany(r => r.Users).WithOne(u => u.Role).HasForeignKey(u => u.RoleId);
+
+            builder.HasData(
+                new Role
+                {
+                    Id = 1,
+                    Name = "Admin"
+                }
+            );
         }
     }
 }
